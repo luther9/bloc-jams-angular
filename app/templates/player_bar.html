@@ -14,7 +14,7 @@
 	      ng-click="playerBar.songPlayer.pause()">
 	</span>
       </a>
-      <a class="next">
+      <a class="next" ng-click="playerBar.songPlayer.next()">
 	<span class="ion-skip-forward"></span>
       </a>
     </div>
@@ -38,5 +38,8 @@
 	<div class="thumb"></div>
       </div>
     </div>
+    <p>{{playerBar.songPlayer.currentSong.title}}</p>
+    <p>{{playerBar.albumData.artist}}</p>
+    <p>{{playerBar.songPlayer.currentSong.duration}}</p>
   </div>
 </section>
