@@ -26,8 +26,8 @@
 	<seek-bar value="{{playerBar.songPlayer.currentTime}}"
 	max="{{playerBar.songPlayer.currentSong.duration}}"
 	on-change="playerBar.songPlayer.setCurrentTime(value)"></seek-bar>
-	<div class="current-time"></div>
-	<div class="total-time"></div>
+	<div class="current-time">{{playerBar.songPlayer.currentTime}}</div>
+	<div class="total-time">{{playerBar.songPlayer.currentSong.duration}}</div>
       </div>
     </div>
     <div class="control-group volume">
@@ -36,6 +36,5 @@
     </div>
     <p>{{playerBar.songPlayer.currentSong.title}}</p>
     <p>{{playerBar.albumData.artist}}</p>
-    <p>{{playerBar.songPlayer.currentSong.duration}}</p>
   </div>
 </section>
